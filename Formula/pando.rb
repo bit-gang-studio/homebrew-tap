@@ -1,36 +1,36 @@
 class Pando < Formula
-  desc "Pando: the worktree-native git client (CLI)"
+  desc "Pando on the command line: list, add and remove git worktrees"
   homepage "https://github.com/bit-gang-studio/pando"
-  version "0.0.1"
+  version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bit-gang-studio/pando/releases/download/v0.0.1/pando-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "3adb15815638603dcf395fe96ddfc9fcadc04b3850e5268b8ac13cb0a860fe64"
+      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.0/pando-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "9b5770802a308c4934114d4c810ff6f62c4594c52556daf22fcf2b0698132eec"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bit-gang-studio/pando/releases/download/v0.0.1/pando-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "8e66dc0342f52129933a8b85efb414ccfa463fb81acfed7ee278a54fc07bc8ed"
+      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.0/pando-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f64d37c3c8411dc7fc7a23fc9de616e8c11f9444d84db2947a40728972cccbb0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bit-gang-studio/pando/releases/download/v0.0.1/pando-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "791133859b6709138782ec4e5581662a39e39537f9be61f3927fccbc86a34640"
+      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.0/pando-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5976b8e0701603cd06dc8982a6f53505307d99368f1e3d1cf2f5ed72ceff6d86"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bit-gang-studio/pando/releases/download/v0.0.1/pando-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e11f26260ed395080fbee4c5dcf369a02174ca3cc852844cc09526de2420b91e"
+      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.0/pando-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "85bc1626ff06f309e4bc227c69441aca04f48ecebadaa85d6755a33093c2128e"
     end
   end
   license "Apache-2.0"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
