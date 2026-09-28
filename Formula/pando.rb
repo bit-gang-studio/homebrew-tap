@@ -1,25 +1,25 @@
 class Pando < Formula
   desc "Pando on the command line: list, add and remove git worktrees"
   homepage "https://github.com/bit-gang-studio/pando"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.2/pando-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "3d5213dbdff35fbeb6562ce6b3a9e5a2c6e8de0b1f0cb88731ca622b2325990a"
+      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.3/pando-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "6109130b98d277b9223353db7c5d567d03b7777dcff02ac11cadf7a8d9aa6410"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.2/pando-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "016617c728b3f5632829f63fc70663e05524a8f4efbc4b8def6781de0d903fd4"
+      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.3/pando-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "804d89596ab515afe2209134405a2474af11efcfaaf1796d7814e67e198be21b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.2/pando-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "25cd308237d605e5a4da32524dde9921dbe93ce638d008b821b2ff3b4a0e7b05"
+      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.3/pando-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f594c7dac98907b9217574e9dfbe552a95eaeac977143778f925d8463a6503b6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.2/pando-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a69b19294c6629a14fbb1591ad2538f11f7f47c8225659f12e5300b911fa74f4"
+      url "https://github.com/bit-gang-studio/pando/releases/download/v0.1.3/pando-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4e317c0309d21945434fe5f2d9c2ef3e06e9d88a6c56d9a5dbc2f9eae1eac653"
     end
   end
   license "Apache-2.0"
