@@ -1,6 +1,6 @@
 cask "pando" do
-  version "0.1.6"
-  sha256 "07ad6925c85b4f3822ca4750547da514fa254b34bd10c331c9717129138c94bb"
+  version "0.1.7"
+  sha256 "e0531643851631ab718b2d76ed0764ff19165917c3a58511c00ec6c2294a4a65"
 
   url "https://github.com/bit-gang-studio/pando/releases/download/v#{version}/Pando_#{version}_universal.dmg"
   name "Pando"
